@@ -1,3 +1,7 @@
+<img width=100% bottom=50px src="https://github.com/user-attachments/assets/8c625f1b-157f-40d4-ad7d-baebdbc51198"/>
+<br>
+<br> 
+
 # 🤖 Sobre o projeto :
 
 Este projeto teve como objetivo principal otimizar a visualizaçào do envio de descontos para clientes da seguradora Tokio Marine, priorizando aqueles que realmente utilizam os benefícios. Antes, o processo de extração de dados e análise era manual, demorava mais de duas horas e envolvia duas pessoas. Com o uso de automação, conseguimos reduzir esse tempo para cerca de 35 minutos, utilizando um robô chamado Tok_IA feito por mim.
