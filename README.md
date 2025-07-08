@@ -18,7 +18,7 @@ A proposta geral do projeto é utilizar Inteligência Artificial e automações 
 <br>
 <br> 
 
-# 💻 Bibliotecas usadas no robô:
+# 💻 Bibliotecas usadas nos Agentes:
 
 ### - Playwright:
 
