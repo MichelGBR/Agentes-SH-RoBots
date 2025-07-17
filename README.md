@@ -16,24 +16,19 @@ A proposta geral do projeto é utilizar Inteligência Artificial e automações 
 
 # 💻 Bibliotecas usadas nos Agentes:
 
-Streamlit – Para a interface web simples e funcional
 
-LangChain – Para a orquestração da cadeia de recuperação e geração
+time – Para controlar pausas entre ações automatizadas, garantindo que a página carregue corretamente
 
-FAISS – Para a indexação e busca de vetores
+requests – Para fazer requisições HTTP e baixar arquivos PDF diretamente da web
 
-Hugging Face Embeddings – Para transformar o conteúdo textual em vetores
+pdfplumber – Para extrair texto de arquivos PDF de maneira estruturada
 
-Ollama – Para rodar o modelo LLM localmente (ex: LLaMA 2)
+BytesIO (do módulo io) – Para tratar arquivos binários em memória como se fossem arquivos físicos
 
-# 🧠 Processo
+playwright – Para automação de navegador, clicando, preenchendo campos e navegando em páginas da web
 
-1. Leitura do arquivo: O script carrega um arquivo .txt com blocos de informações sobre mim.
+selenium – Alternativa ao Playwright para automação de testes e navegação web por meio de drivers de navegador (ex: ChromeDriver)
 
-2. Criação do vetor semântico: Cada trecho do texto é transformado em vetores com o modelo all-MiniLM-L6-v2.
+pandas – Para ler, manipular e atualizar planilhas Excel de forma eficiente
 
-3. Indexação com FAISS: Os vetores são indexados para rápida recuperação.
-
-4. RAG (Geração Aumentada por Recuperação): Ao digitar uma pergunta, o sistema busca os trechos mais relevantes do texto e passa essas informações ao modelo de linguagem (LLM), que então responde com base apenas nesses dados.
-
-5. Interface: Tudo isso é disponibilizado por uma interface amigável via Streamlit.
+openpyxl (usada internamente pelo pandas) – Para leitura e escrita de arquivos .xlsx
