@@ -16,44 +16,13 @@ A proposta geral do projeto é utilizar Inteligência Artificial e automações 
 
 # 💻 Bibliotecas usadas nos Agentes:
 
-### - Playwright:
+Streamlit – Para a interface web simples e funcional
 
-Ferramenta moderna de automação de navegadores, com suporte a múltiplos browsers e execução paralela. Está sendo estudada e testada como evolução do Selenium para novos projetos. Suas principais vantagens incluem:
+LangChain – Para a orquestração da cadeia de recuperação e geração
 
-• Execução mais rápida e estável em comparação ao Selenium;
-• Facilidade para lidar com elementos dinâmicos e testes em paralelo;
-• Potencial para substituir o Selenium em futuras automações, mantendo a robustez e ampliando a escalabilidade dos processos.
+FAISS – Para a indexação e busca de vetores
 
-### - Selenium: 
-Biblioteca de automação que permite controlar navegadores da web programaticamente. No projeto Tok_IA, o Selenium foi usado para:
+Hugging Face Embeddings – Para transformar o conteúdo textual em vetores
 
-• Acessar o site da seguradora automaticamente;
-
-• Fazer login com credenciais fornecidas;
-
-• Navegar por diferentes seções e capturar informações relevantes;
-
-• Realizar interações como cliques e preenchimento de campos.
-
-• A biblioteca foi a espinha dorsal da automação, lidando com a maior parte das interações com o site.
-
-### - Pandas:
-Biblioteca de análise e manipulação de dados. Na Tok_IA, o Pandas desempenhou um papel importante em:
-
-• Ler a base de dados inicial em formato Excel para identificar os clientes e informações necessárias;
-
-• Atualizar os dados coletados pelo Selenium diretamente na planilha;
-
-• Salvar os resultados finais em um arquivo Excel, garantindo que as informações fossem bem organizadas e acessíveis.
-
-• Essa integração tornou possível gerar relatórios atualizados com precisão e rapidez.
-
-### - PyAutoGUI: 
-Biblioteca utilizada para automação de interações com a interface gráfica do usuário (GUI).
-
-• Realizar cliques e movimentar o mouse em situações onde o Selenium não conseguiu interagir com elementos da página;
-
-• Simular entrada de dados em campos específicos quando outras abordagens falharam.
-
-• A flexibilidade do PyAutoGUI garantiu que o processo não fosse interrompido por limitações do Selenium, completando a automação de forma eficiente.
+Ollama – Para rodar o modelo LLM localmente (ex: LLaMA 2)
 
