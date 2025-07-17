@@ -26,3 +26,14 @@ Hugging Face Embeddings – Para transformar o conteúdo textual em vetores
 
 Ollama – Para rodar o modelo LLM localmente (ex: LLaMA 2)
 
+# 🧠 Processo
+
+1. Leitura do arquivo: O script carrega um arquivo .txt com blocos de informações sobre mim.
+
+2. Criação do vetor semântico: Cada trecho do texto é transformado em vetores com o modelo all-MiniLM-L6-v2.
+
+3. Indexação com FAISS: Os vetores são indexados para rápida recuperação.
+
+4. RAG (Geração Aumentada por Recuperação): Ao digitar uma pergunta, o sistema busca os trechos mais relevantes do texto e passa essas informações ao modelo de linguagem (LLM), que então responde com base apenas nesses dados.
+
+5. Interface: Tudo isso é disponibilizado por uma interface amigável via Streamlit.
